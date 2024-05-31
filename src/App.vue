@@ -1,15 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#home">Home</a>
+          <a class="navbar-item" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <HomeSection />
+    <ContactSection />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeSection from '@/components/Home.vue';
+import ContactSection from '@/components/Contact.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeSection,
+    ContactSection
   }
 }
 </script>
@@ -22,5 +34,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.navbar {
+  background-color: #00d1b2;
+}
+
+.navbar-item {
+  color: white;
+}
+
+.navbar-item:hover {
+  background-color: #00b89c;
 }
 </style>
