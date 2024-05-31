@@ -3,8 +3,13 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="#home">Home</a>
-          <a class="navbar-item" href="#contact">Contact</a>
+          <router-link class="navbar-item" to="/">Home</router-link>
+          <router-link class="navbar-item" to="/gallery">Gallery</router-link>
+          <router-link class="navbar-item" to="/contact">Contact</router-link>
+          <router-link class="navbar-item" to="/policies">Policies</router-link>
+          <router-link class="navbar-item" to="/amenities">Amenities</router-link>
+          <router-link class="navbar-item" to="/services">Services</router-link>
+          <router-link class="navbar-item" to="/local-guide">Local Guide</router-link>
         </div>
       </div>
     </nav>
@@ -38,6 +43,10 @@ export default {
 
 .navbar {
   background-color: #00d1b2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-item {
@@ -46,5 +55,9 @@ export default {
 
 .navbar-item:hover {
   background-color: #00b89c;
+}
+
+.section {
+  padding-top: 100px;
 }
 </style>
