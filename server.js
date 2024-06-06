@@ -36,14 +36,14 @@ app.post('/send-booking', [
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'your-email@gmail.com',
-      pass: 'your-email-password'
+      user: 'storagebear@gmail.com',
+      pass: 'okhGNxCpB36q2$'
     }
   });
 
   const mailOptions = {
-    from: 'your-email@gmail.com',
-    to: 'recipient-email@example.com',
+    from: 'storagebear@gmail.com',
+    to: 'g.alonso.ct@gmail.com',
     subject: 'New Booking Request',
     text: `
       Full Name: ${fullName}
