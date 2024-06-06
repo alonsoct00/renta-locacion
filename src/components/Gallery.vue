@@ -17,7 +17,7 @@
             <img :src="currentImage">
           </p>
         </div>
-        <button class="modal-close is-large" aria-label="close" @click="closeModal"></button>
+        <button class="modal-close is-large" aria-label="close" @click="closeModal">Cerrar</button>
       </div>
     </div>
   </section>

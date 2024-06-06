@@ -16,7 +16,7 @@
     <HomeSection />
     <GallerySection />
     <ContactSection />
-    <BookingForm />
+
   </div>
 </template>
 
@@ -24,13 +24,12 @@
 import HomeSection from '@/components/Home.vue';
 import GallerySection from '@/components/Gallery.vue';
 import ContactSection from '@/components/Contact.vue';
-import BookingForm from './components/BookingForm.vue';
+
 
 export default {
   name: 'App',
   components: {
     HomeSection,
-    BookingForm,
     GallerySection,
     ContactSection
   }

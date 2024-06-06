@@ -29,21 +29,21 @@ app.post('/send-booking', [
     checkoutDate,
     numberOfGuests,
     stayWithPets,
-    comments
+    comments,
   } = req.body;
 
   // Configura Nodemailer
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'storagebear@gmail.com',
-      pass: 'okhGNxCpB36q2$'
+      user: '',
+      pass: ''
     }
   });
 
   const mailOptions = {
-    from: 'storagebear@gmail.com',
-    to: 'g.alonso.ct@gmail.com',
+    from: '',
+    to: '',
     subject: 'New Booking Request',
     text: `
       Full Name: ${fullName}
@@ -62,6 +62,7 @@ app.post('/send-booking', [
       return res.status(500).json({ error: 'Failed to send email' });
     }
     res.status(200).json({ message: 'Email sent successfully' });
+    console.log (info);
   });
 });
 
