@@ -3,22 +3,26 @@
       <div class="container" v-if="basicInfo">
         <h1 class="title">{{ basicInfo.title }}</h1>
         <p class="subtitle">{{ basicInfo.description }}</p>
-        <!-- Más información básica aquí -->
-        <p>ola je ase</p>
+        <p></p>
       </div>
       <div v-else>
-        Loading...
+        Cargando...
       </div>
       <p>hola</p>
+      <BookingIframe />
     </section>
   </template>
 
   <script>
   import client from '@/services/datocms';
+  import BookingIframe from '@/components/BookingIframe.vue';
 
   export default {
     name: 'HomeSection',
-    data() {
+    components: {
+    BookingIframe
+  },
+  data() {
       return {
         basicInfo: null,
         isLoading: true,
@@ -31,7 +35,7 @@
         meta: [
           {
             name: 'description',
-            content: this.basicInfo ? this.basicInfo.description : 'Welcome to our rental location, the perfect place to stay for your vacation.'
+            content: this.basicInfo ? this.basicInfo.description : 'Welcome to our rental location, the perfect place to stay for your vacation.',
           },
           // Open Graph tags
           {
