@@ -2,8 +2,8 @@
   <section id="gallery" class="section">
     <div class="container">
       <h1 class="title">Photo Gallery</h1>
-      <div class="columns is-multiline">
-        <div class="column is-one-third" v-for="(image, index) in images" :key="index">
+      <div class="masonry-grid">
+        <div class="masonry-item" v-for="(image, index) in images" :key="index">
           <figure class="image is-4by3">
             <img :src="image.url" @click="openModal(image.url)">
           </figure>
@@ -31,6 +31,12 @@ export default {
       images: [
         { url: 'https://dummyimage.com/600x400/000/fff' },
         { url: 'https://dummyimage.com/600x400/000/fff' },
+        { url: 'https://dummyimage.com/600x400/000/fff' },
+        { url: 'https://dummyimage.com/600x400/000/fff' },
+        { url: 'https://dummyimage.com/600x400/000/fff' },
+        { url: 'https://dummyimage.com/600x400/000/fff' },
+        { url: 'https://dummyimage.com/600x400/000/fff' },
+        { url: 'https://dummyimage.com/600x400/000/fff' },
         { url: 'https://dummyimage.com/600x400/000/fff' }
       ],
       isModalActive: false,
@@ -53,6 +59,31 @@ export default {
 </script>
 
 <style scoped>
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  justify-items: stretch;
+  justify-content: space-evenly;
+}
+
+.masonry-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .modal {
   display: flex;
   align-items: center;
@@ -66,7 +97,7 @@ export default {
 }
 
 .modal-content {
-  transform: translateY(-100%);
+  transform: translateY(50%);
   transition: transform 0.3s ease;
 }
 
@@ -104,3 +135,4 @@ export default {
   }
 }
 </style>
+
