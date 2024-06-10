@@ -13,11 +13,8 @@
     "core-js": "^3.37.1",
     "express-validator": "^7.1.0",
     "nodemailer": "^6.9.13",
-    "vue": "^2.7.16",
-    "vue-awesome": "^4.5.0",
+    "vue": "^3.0.11",
     "vue-meta": "^2.4.0",
-    "vue-recaptcha": "3.0.0-alpha.6",
-    "vue-recaptcha-v3": "^2.0.1",
     "vue-router": "^3.6.5"
   },
   "devDependencies": {
