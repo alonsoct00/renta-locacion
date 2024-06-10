@@ -9,18 +9,22 @@
           </figure>
         </div>
       </div>
-
-      <div class="modal" :class="{ 'is-active': isModalActive, 'slide-in': isModalActive, 'slide-out': !isModalActive }">
-        <div class="modal-background" @click="closeModal"></div>
-        <div class="modal-content">
-          <p class="image">
-            <img :src="currentImage">
-          </p>
-        </div>
-        <button class="modal-close is-large" aria-label="close" @click="closeModal">Cerrar</button>
-      </div>
     </div>
+    <div class="modal"
+        :class="{ 'is-active': isModalActive, 'slide-in': isModalActive, 'slide-out': !isModalActive }">
+        <div class="modal-background" @click="closeModal"></div>
+        <div class="modal-wrapper" @click="closeModal">
+          <div class="modal-content">
+            <button class="modal-close is-large" aria-label="close" @click="closeModal">Cerrar</button>
+            <p class="image">
+              <img :src="currentImage">
+            </p>
+          </div>
+
+        </div>
+      </div>
   </section>
+
 </template>
 
 <script>
@@ -47,13 +51,23 @@ export default {
     openModal(image) {
       this.currentImage = image;
       this.isModalActive = true;
+      document.addEventListener('keydown', this.handleEsc);
     },
     closeModal() {
       this.isModalActive = false;
       setTimeout(() => {
         this.currentImage = '';
       }, 300); // Match this timeout to the CSS animation duration
+      document.removeEventListener('keydown', this.handleEsc);
+    },
+    handleEsc(event) {
+      if (event.key === 'Escape' || event.key === 'Esc') {
+        this.closeModal();
+      }
     }
+  },
+  beforeUnmount() {
+    document.removeEventListener('keydown', this.handleEsc);
   }
 }
 </script>
@@ -90,27 +104,73 @@ export default {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  width: 100%;
+  height: 0;
 }
 
 .modal.is-active {
   opacity: 1;
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
-.modal-content {
+.modal-wrapper  {
+  position: inherit;
+  float: left;
+  clear: both;
+}
+
+
+.modal.is-active.modal-wrapper {
   transform: translateY(50%);
   transition: transform 0.3s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 5;
+  display: inline-block;
+  width: auto;
 }
 
-.modal.is-active .modal-content {
+.modal-wrapper button.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal.is-active .modal-wrapper {
   transform: translateY(0);
 }
 
-.modal.slide-in .modal-content {
+.modal.slide-in .modal-wrapper {
   animation: slideIn 0.3s forwards;
 }
 
-.modal.slide-out .modal-content {
+.modal.slide-out .modal-wrapper {
   animation: slideOut 0.3s forwards;
+}
+
+.modal.is-active .modal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000030;
+  z-index: 5;
+}
+
+.modal-content {
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  position: relative;
 }
 
 @keyframes slideIn {
@@ -118,6 +178,7 @@ export default {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -129,10 +190,10 @@ export default {
     transform: translateY(0);
     opacity: 1;
   }
+
   to {
     transform: translateY(-100%);
     opacity: 0;
   }
 }
 </style>
-

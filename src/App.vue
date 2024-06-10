@@ -4,12 +4,12 @@
       <div class="navbar-menu">
         <div class="navbar-start">
           <router-link class="navbar-item" to="/">Home</router-link>
-          <router-link class="navbar-item" to="/gallery">Gallery</router-link>
-          <router-link class="navbar-item" to="/contact">Contact</router-link>
-          <router-link class="navbar-item" to="/policies">Policies</router-link>
           <router-link class="navbar-item" to="/amenities">Amenities</router-link>
           <router-link class="navbar-item" to="/services">Services</router-link>
           <router-link class="navbar-item" to="/local-guide">Local Guide</router-link>
+          <router-link class="navbar-item" to="/gallery">Gallery</router-link>
+          <router-link class="navbar-item" to="/policies">Policies</router-link>
+          <router-link class="navbar-item" to="/contact">Contact</router-link>
         </div>
       </div>
     </nav>
@@ -48,7 +48,7 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .navbar {
@@ -69,5 +69,20 @@ body, html {
 
 .section {
   padding-top: 100px;
+}
+
+.tally-block.tally-block-input-text,
+.tally-block.tally-block-input-email,
+.tally-block.tally-block-input-phone-number,
+.tally-block.tally-block-input-date,
+.tally-block.tally-block-input-number,
+.tally-block.tally-block-dropdown,
+.tally-block.tally-block-textarea {
+	width: 50%;
+}
+.tally-block.tally-block-title {
+    display: inline-block;
+    max-width: 26%;
+    width: auto;
 }
 </style>
