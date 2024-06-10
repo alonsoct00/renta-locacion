@@ -27,7 +27,7 @@
             <p>Viaje de negocios</p>
           </div>
           <div class="choice_item">
-            <span class="choice_icon">icon short accomodation</span>
+            <span class="choice_icon">icon short accommodation</span>
             <p>Alojamiento temporal</p>
           </div>
           <div class="choice_item">
@@ -150,5 +150,28 @@ export default {
 
 .title, .subtitle {
   margin: 0;
+}
+
+.choice_list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.choice_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.choice_icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.choice_icon i {
+  color: #007bff;
 }
 </style>
