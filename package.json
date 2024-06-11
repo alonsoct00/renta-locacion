@@ -14,6 +14,7 @@
     "express-validator": "^7.1.0",
     "nodemailer": "^6.9.13",
     "vue": "^2.7.16",
+    "vue-feather-icons": "^5.1.0",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.6.5"
   },

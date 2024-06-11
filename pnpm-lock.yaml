@@ -26,6 +26,9 @@ importers:
       vue:
         specifier: ^2.7.16
         version: 2.7.16
+      vue-feather-icons:
+        specifier: ^5.1.0
+        version: 5.1.0
       vue-meta:
         specifier: ^2.4.0
         version: 2.4.0
@@ -1194,6 +1197,9 @@ packages:
 
   axios@1.7.2:
     resolution: {integrity: sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==}
+
+  babel-helper-vue-jsx-merge-props@2.0.3:
+    resolution: {integrity: sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==}
 
   babel-loader@8.3.0:
     resolution: {integrity: sha512-H8SvsMF+m9t15HNLMipppzkC+Y2Yq+v3SonZyU70RBL/h1gxPkH08Ot8pEE9Z4Kd+czyWJClmFS8qzIP9OZ04Q==}
@@ -3648,6 +3654,9 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
+  vue-feather-icons@5.1.0:
+    resolution: {integrity: sha512-ZyM2yFGmL9DYLZYHm63KV1zCQOj8czC2LzDSkxoIp9o6zMAOY4yv1FkxbX+XNUwcH3RRrAuvf25Ij7CnUUsQVA==}
+
   vue-hot-reload-api@2.3.4:
     resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==}
 
@@ -5510,6 +5519,8 @@ snapshots:
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
+
+  babel-helper-vue-jsx-merge-props@2.0.3: {}
 
   babel-loader@8.3.0(@babel/core@7.24.7)(webpack@5.91.0):
     dependencies:
@@ -7838,6 +7849,10 @@ snapshots:
       semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
+
+  vue-feather-icons@5.1.0:
+    dependencies:
+      babel-helper-vue-jsx-merge-props: 2.0.3
 
   vue-hot-reload-api@2.3.4: {}
 

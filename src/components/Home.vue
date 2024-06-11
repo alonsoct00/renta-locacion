@@ -19,19 +19,19 @@
         <h2>Ideal para...</h2>
         <div class="choice_list">
           <div class="choice_item">
-            <span class="choice_icon">icon vacations</span>
+            <MapIcon class="choice_icon"/>
             <p>Vacaciones</p>
           </div>
           <div class="choice_item">
-            <span class="choice_icon">icon corporate</span>
+            <BriefcaseIcon class="choice_icon" />
             <p>Viaje de negocios</p>
           </div>
           <div class="choice_item">
-            <span class="choice_icon">icon short accommodation</span>
+            <KeyIcon class="choice_icon" />
             <p>Alojamiento temporal</p>
           </div>
           <div class="choice_item">
-            <span class="choice_icon">icon rent apartment</span>
+            <HomeIcon class="choice_icon" />
             <p>Renta de largo plazo</p>
           </div>
         </div>
@@ -44,11 +44,16 @@
 <script>
 import client from '@/services/datocms';
 import BookingIframe from '@/components/BookingIframe.vue';
+import { BriefcaseIcon, MapIcon, KeyIcon, HomeIcon } from 'vue-feather-icons';
 
 export default {
   name: 'HomeSection',
   components: {
-    BookingIframe
+    BookingIframe,
+    BriefcaseIcon,
+    MapIcon,
+    KeyIcon,
+    HomeIcon
   },
   data() {
     return {
@@ -175,3 +180,6 @@ export default {
   color: #007bff;
 }
 </style>
+
+<!-- eslint-disable-next-line vue/no-unused-components -->
+<!-- eslint-disable-next-line vue/no-unused-components -->
