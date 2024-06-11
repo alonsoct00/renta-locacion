@@ -12,8 +12,8 @@
     </div>
     <div class="intro_info">
       <div class="container">
-        <h2></h2>
-        <p></p>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat magni alias fugit ut amet, exercitationem quam nulla in corrupti earum sequi natus rem qui consectetur iste quidem? Modi, explicabo accusamus.</p>
       </div>
       <div class="container">
         <h2>Ideal para...</h2>
@@ -38,6 +38,7 @@
       </div>
     </div>
     <BookingIframe />
+    <ImageSlider :images="imageList" />
   </section>
 </template>
 
@@ -45,11 +46,13 @@
 import client from '@/services/datocms';
 import BookingIframe from '@/components/BookingIframe.vue';
 import { BriefcaseIcon, MapIcon, KeyIcon, HomeIcon } from 'vue-feather-icons';
+import ImageSlider from '@/components/ImageSlider.vue';
 
 export default {
   name: 'HomeSection',
   components: {
     BookingIframe,
+    ImageSlider,
     BriefcaseIcon,
     MapIcon,
     KeyIcon,
@@ -59,7 +62,12 @@ export default {
     return {
       basicInfo: null,
       isLoading: true,
-      error: null
+      error: null,
+      imageList: [
+        'https://via.placeholder.com/800x300?text=Image+1',
+        'https://via.placeholder.com/800x300?text=Image+2',
+        'https://via.placeholder.com/800x300?text=Image+3'
+      ]
     };
   },
   metaInfo() {
@@ -180,6 +188,3 @@ export default {
   color: #007bff;
 }
 </style>
-
-<!-- eslint-disable-next-line vue/no-unused-components -->
-<!-- eslint-disable-next-line vue/no-unused-components -->

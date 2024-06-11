@@ -15,6 +15,7 @@
     </nav>
     <HomeSection />
     <GallerySection />
+    <AmenitiesSection/>
     <ContactSection />
 
   </div>
@@ -24,6 +25,7 @@
 import HomeSection from '@/components/Home.vue';
 import GallerySection from '@/components/Gallery.vue';
 import ContactSection from '@/components/Contact.vue';
+import AmenitiesSection from '@/components/Amenities.vue';
 
 
 export default {
@@ -31,6 +33,7 @@ export default {
   components: {
     HomeSection,
     GallerySection,
+    AmenitiesSection,
     ContactSection
   }
 }
