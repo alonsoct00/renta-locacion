@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <router-link class="navbar-item" to="/">Home</router-link>
-          <router-link class="navbar-item" to="/amenities">Amenities</router-link>
-          <router-link class="navbar-item" to="/services">Services</router-link>
-          <router-link class="navbar-item" to="/local-guide">Local Guide</router-link>
-          <router-link class="navbar-item" to="/gallery">Gallery</router-link>
-          <router-link class="navbar-item" to="/policies">Policies</router-link>
-          <router-link class="navbar-item" to="/contact">Contact</router-link>
-        </div>
-      </div>
-    </nav>
+    <NavbarTop />
     <HomeSection />
     <GallerySection />
     <AmenitiesSection/>
@@ -22,6 +10,7 @@
 </template>
 
 <script>
+import NavbarTop from '@/components/Navbar.vue';
 import HomeSection from '@/components/Home.vue';
 import GallerySection from '@/components/Gallery.vue';
 import ContactSection from '@/components/Contact.vue';
@@ -31,6 +20,7 @@ import AmenitiesSection from '@/components/Amenities.vue';
 export default {
   name: 'App',
   components: {
+    NavbarTop,
     HomeSection,
     GallerySection,
     AmenitiesSection,
@@ -48,8 +38,6 @@ body, html {
   box-sizing: border-box;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;

@@ -1,19 +1,31 @@
 <template>
-  <section class="amenities-section">
-      <div class="container">
-      <h1>Amenidades</h1>
-      <ImageSlider :images="imageList" />
+  <section class="amenities-section" id="amenities">
+    <div class="container">
+      <div class="row row-flex">
+        <div class="col-md-12 mx-3">
+          <h1>Amenidades</h1>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <h3>Title</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptates ipsum delectus quos
+            nostrum quia, facilis veniam quam voluptatum incidunt accusamus suscipit eaque sint voluptas temporibus iure
+            laudantium minima dolore.</p>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <ImageSlider :images="imageList" />
+        </div>
+      </div>
     </div>
   </section>
 
-  </template>
+</template>
 
-  <script>
-  import { } from 'vue-feather-icons';
-  import ImageSlider from '@/components/ImageSlider.vue';
-  export default {
-    name: 'AmenitiesSection',
-    components: {
+<script>
+import { } from 'vue-feather-icons';
+import ImageSlider from '@/components/ImageSlider.vue';
+export default {
+  name: 'AmenitiesSection',
+  components: {
     ImageSlider,
   },
   data() {
@@ -25,8 +37,8 @@
       ]
     };
   },
-  }
-  </script>
+}
+</script>
 
 <style scoped>
 .amenities-section .slider {
@@ -35,6 +47,7 @@
 }
 
 .amenities-section .slider .slide {
-  min-height: 500px; /* Ajustar altura según necesidades */
+  min-height: 500px;
+  /* Ajustar altura según necesidades */
 }
 </style>

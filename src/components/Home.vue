@@ -1,7 +1,6 @@
 <template>
-  <section class="hero is-fullheight-with-navbar">
-    <div class="hero-body parallax" :style="{ backgroundImage: `url(${basicInfo ? basicInfo.heroImageUrl.url : ''})` }"
-  >
+  <section class="hero is-fullheight-with-navbar" id="home">
+    <div class="hero-body parallax" :style="{ backgroundImage: `url(${basicInfo ? basicInfo.heroImageUrl.url : ''})` }">
       <div class="container" v-if="basicInfo">
         <h1 class="title">{{ basicInfo.title }}</h1>
         <p class="subtitle">{{ basicInfo.description }}</p>
@@ -13,13 +12,14 @@
     <div class="intro_info">
       <div class="container">
         <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat magni alias fugit ut amet, exercitationem quam nulla in corrupti earum sequi natus rem qui consectetur iste quidem? Modi, explicabo accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat magni alias fugit ut amet, exercitationem
+          quam nulla in corrupti earum sequi natus rem qui consectetur iste quidem? Modi, explicabo accusamus.</p>
       </div>
       <div class="container">
         <h2>Ideal para...</h2>
         <div class="choice_list">
           <div class="choice_item">
-            <MapIcon class="choice_icon"/>
+            <MapIcon class="choice_icon" />
             <p>Vacaciones</p>
           </div>
           <div class="choice_item">
@@ -37,8 +37,16 @@
         </div>
       </div>
     </div>
-    <BookingIframe />
-    <ImageSlider :images="imageList" />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <BookingIframe />
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <ImageSlider :images="imageList" />
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -161,7 +169,8 @@ export default {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
   margin: 0;
 }
 

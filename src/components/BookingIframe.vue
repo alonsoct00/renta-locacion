@@ -85,13 +85,13 @@
   <style scoped>
   .bookingIframe {
     background: transparent;
-    max-width: 50%;
+    max-width: 90%;
     }
 
     @media (width <= 800px) {
         .bookingIframe {
         background: transparent;
-        max-width: 100%;
+        max-width: 95%;
         }
     }
   </style>
