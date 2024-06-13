@@ -3,10 +3,9 @@ import VueRouter from 'vue-router';
 import HomeSection from '@/components/Home.vue';
 import GallerySection from '@/components/Gallery.vue';
 import ContactSection from '@/components/Contact.vue';
-import PoliciesSection from '@/components/Policies.vue';
 import AmenitiesSection from '@/components/Amenities.vue';
-import ServicesSection from '@/components/Services.vue';
 import LocalGuideSection from '@/components/LocalGuide.vue';
+import PoliciesPage from '@/views/Policies.vue';
 import NotFound from '@/components/NotFound.vue';
 
 Vue.use(VueRouter);
@@ -15,10 +14,10 @@ const routes = [
   { path: '/', name: 'Home', component: HomeSection },
   { path: '/gallery', name: 'Gallery', component: GallerySection },
   { path: '/contact', name: 'Contact', component: ContactSection },
-  { path: '/policies', name: 'Policies', component: PoliciesSection },
+  { path: '/policies', name: 'Policies', component: PoliciesPage },
   { path: '/amenities', name: 'Amenities', component: AmenitiesSection },
-  { path: '/services', name: 'Services', component: ServicesSection },
   { path: '/local-guide', name: 'LocalGuide', component: LocalGuideSection },
+
   { path: '*', component: NotFound }
 ];
 

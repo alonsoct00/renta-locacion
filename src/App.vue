@@ -2,8 +2,9 @@
   <div id="app">
     <NavbarTop />
     <HomeSection />
-    <GallerySection />
     <AmenitiesSection/>
+    <GallerySection />
+    <LocalGuideSection />
     <ContactSection />
 
   </div>
@@ -13,6 +14,7 @@
 import NavbarTop from '@/components/Navbar.vue';
 import HomeSection from '@/components/Home.vue';
 import GallerySection from '@/components/Gallery.vue';
+import LocalGuideSection from '@/components/LocalGuide.vue';
 import ContactSection from '@/components/Contact.vue';
 import AmenitiesSection from '@/components/Amenities.vue';
 
@@ -24,7 +26,8 @@ export default {
     HomeSection,
     GallerySection,
     AmenitiesSection,
-    ContactSection
+    ContactSection,
+    LocalGuideSection,
   }
 }
 </script>

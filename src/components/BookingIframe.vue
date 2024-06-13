@@ -10,8 +10,7 @@
         marginheight="0"
         marginwidth="0"
         class="bookingIframe"
-        title="Book a stay"
-        @load="onIframeLoad">
+        title="Book a stay">
       </iframe>
     </div>
   </template>
@@ -26,6 +25,7 @@
     },
     mounted() {
       this.loadTallyScript();
+      setTimeout(this.addStyles, 5000);
     },
     methods: {
       loadTallyScript() {
@@ -40,7 +40,6 @@
           document.body.appendChild(script);
         } else {
           this.loadEmbeds();
-          this.onIframeLoad();
         }
       },
       loadEmbeds() {
@@ -52,37 +51,45 @@
           });
         }
       },
-      onIframeLoad(event) {
-        const iframe = event.target;
-        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-
-        // Inject styles into the iframe's document
-        const styleElement = iframeDocument.createElement('style');
-        styleElement.textContent = `
-          .tally-block.tally-block-input-text,
-          .tally-block.tally-block-input-email,
-          .tally-block.tally-block-input-phone-number,
-          .tally-block.tally-block-input-date,
-          .tally-block.tally-block-input-number,
-          .tally-block.tally-block-dropdown,
-          .tally-block.tally-block-textarea {
-            width: 50%;
-          }
-          .tally-block.tally-block-title {
-            display: inline-block;
-            max-width: 26%;
-            width: auto;
-          }
-        `;
-        iframeDocument.head.appendChild(styleElement);
-      }
-
+      addStyles() {
+      const styleElement = document.createElement('style');
+      styleElement.textContent = `
+        .tally-block.tally-block-input-text,
+        .tally-block.tally-block-input-email,
+        .tally-block.tally-block-input-phone-number,
+        .tally-block.tally-block-input-date,
+        .tally-block.tally-block-input-number,
+        .tally-block.tally-block-dropdown,
+        .tally-block.tally-block-textarea {
+          width: 50% !important;
+        }
+        .tally-block.tally-block-title {
+          display: inline-block;
+          max-width: 26% !important;
+          width: auto;
+        }
+      `;
+      document.head.appendChild(styleElement);
+    },
     }
-
   };
   </script>
 
   <style scoped>
+        .tally-block.tally-block-input-text,
+        .tally-block.tally-block-input-email,
+        .tally-block.tally-block-input-phone-number,
+        .tally-block.tally-block-input-date,
+        .tally-block.tally-block-input-number,
+        .tally-block.tally-block-dropdown,
+        .tally-block.tally-block-textarea {
+          width: 50% !important;
+        }
+        .tally-block.tally-block-title {
+          display: inline-block;
+          max-width: 26% !important;
+          width: auto;
+        }
   .bookingIframe {
     background: transparent;
     max-width: 90%;
@@ -91,7 +98,7 @@
     @media (width <= 800px) {
         .bookingIframe {
         background: transparent;
-        max-width: 95%;
+        max-width: 9%;
         }
     }
   </style>

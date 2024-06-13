@@ -7,11 +7,12 @@
         <b-navbar-nav>
           <b-nav-item href="#home" @click.prevent="scrollTo('home')">Home</b-nav-item>
           <b-nav-item href="#amenities" @click.prevent="scrollTo('amenities')">Amenities</b-nav-item>
-          <b-nav-item href="#services" @click.prevent="scrollTo('services')">Services</b-nav-item>
           <b-nav-item href="#local-guide" @click.prevent="scrollTo('local-guide')">Local Guide</b-nav-item>
           <b-nav-item href="#gallery" @click.prevent="scrollTo('gallery')">Gallery</b-nav-item>
           <b-nav-item href="#contact" @click.prevent="scrollTo('contact')">Contact</b-nav-item>
-          <b-nav-item href="policies.html" target="_blank">Policies</b-nav-item>
+          <b-nav-item>
+            <router-link to="/policies" class="nav-link" target="_blank">Policies</router-link>
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

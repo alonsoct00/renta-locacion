@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row row-flex">
         <div class="col-md-12 mx-3">
-          <h1>Amenidades</h1>
+          <h1>Amenidades y servicios</h1>
         </div>
         <div class="col-md-6 col-xs-12">
           <h3>Title</h3>
