@@ -42,11 +42,13 @@ export default {
 <style>
 
 body, html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
-  position: relative;
+  padding: 0;
+  box-sizing: border-box;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

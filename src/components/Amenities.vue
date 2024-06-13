@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="amenities-section">
       <div class="container">
       <h1>Amenidades</h1>
       <ImageSlider :images="imageList" />
@@ -19,11 +19,22 @@
   data() {
     return {
       imageList: [
-        'https://via.placeholder.com/800x300?text=Image+1',
-        'https://via.placeholder.com/800x300?text=Image+2',
-        'https://via.placeholder.com/800x300?text=Image+3'
+        'https://via.placeholder.com/800x600?text=Image+1',
+        'https://via.placeholder.com/800x600?text=Image+2',
+        'https://via.placeholder.com/800x600?text=Image+3'
       ]
     };
   },
   }
   </script>
+
+<style scoped>
+.amenities-section .slider {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.amenities-section .slider .slide {
+  min-height: 500px; /* Ajustar altura según necesidades */
+}
+</style>

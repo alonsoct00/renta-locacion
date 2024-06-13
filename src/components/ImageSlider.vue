@@ -6,6 +6,7 @@
           v-for="(image, index) in images"
           :key="index"
           :style="{ backgroundImage: 'url(' + image + ')' }"
+          :class="['slide', 'slide-' + index]"
         ></div>
       </div>
       <div class="arrows">
@@ -73,7 +74,7 @@
 
   .slide {
     min-width: 100%;
-    height: 300px; /* Adjust based on your requirement */
+    min-height: 500px;
     background-size: cover;
     background-position: center;
   }
