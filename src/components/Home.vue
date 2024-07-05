@@ -43,7 +43,7 @@
           <BookingIframe />
         </div>
         <div class="col-md-6 col-xs-12">
-          <ImageSlider :images="imageList" />
+          <AirbnbEmbed />
         </div>
       </div>
     </div>
@@ -54,13 +54,13 @@
 import client from '@/services/datocms';
 import BookingIframe from '@/components/BookingIframe.vue';
 import { BriefcaseIcon, MapIcon, KeyIcon, HomeIcon } from 'vue-feather-icons';
-import ImageSlider from '@/components/ImageSlider.vue';
+import AirbnbEmbed from '@/components/AirbnbEmbed.vue';
 
 export default {
   name: 'HomeSection',
   components: {
     BookingIframe,
-    ImageSlider,
+    AirbnbEmbed,
     BriefcaseIcon,
     MapIcon,
     KeyIcon,
@@ -71,11 +71,6 @@ export default {
       basicInfo: null,
       isLoading: true,
       error: null,
-      imageList: [
-        'https://via.placeholder.com/800x300?text=Image+1',
-        'https://via.placeholder.com/800x300?text=Image+2',
-        'https://via.placeholder.com/800x300?text=Image+3'
-      ]
     };
   },
   metaInfo() {

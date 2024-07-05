@@ -33,15 +33,15 @@ export default {
   data() {
     return {
       images: [
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' },
-        { url: 'https://dummyimage.com/600x400/000/fff' }
+        { url: '/img/sala-2.webp' },
+        { url: '/img/cocina-1.webp' },
+        { url: '/img/cocina-4.webp' },
+        { url: '/img/comedor-1.webp' },
+        { url: '/img/estudoio-1.webp' },
+        { url: '/img/recamara-1.webp' },
+        { url: '/img/recamara-a-1.webp' },
+        { url: '/img/banio-1.webp' },
+        { url: '/img/centro-lavado-1.webp' },
       ],
       isModalActive: false,
       currentImage: ''
