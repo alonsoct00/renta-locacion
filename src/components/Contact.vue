@@ -1,23 +1,56 @@
 <template>
-    <section class="section" id="contact">
-      <div class="container">
-        <h1 class="title">Información de Contacto</h1>
-        <div class="content">
+  <section class="section" id="contact">
+    <div class="container">
+      <h1 class="title">Información de Contacto</h1>
+      <div class="content">
+        <div class="contact-info">
           <p><strong>Dirección:</strong> 123 Calle Falsa, Ciudad, País</p>
           <p><strong>Teléfono:</strong> +123 456 7890</p>
           <p><strong>Email:</strong> contacto@ejemplo.com</p>
           <p><strong>Red WiFi:</strong> Wifi-1234 (Contraseña: 5678)</p>
         </div>
       </div>
-    </section>
-  </template>
+    </div>
+  </section>
+</template>
 
-  <script>
-  export default {
-    name: 'ContactSection'
-  }
-  </script>
+<script>
+export default {
+  name: 'ContactSection'
+}
+</script>
 
-  <style scoped>
-  /* Estilos adicionales si es necesario */
-  </style>
+<style scoped>
+.section {
+  padding: 80px 0; /* Espaciado interno */
+  background-color: #f9f9f9; /* Color de fondo */
+  text-align: center;
+}
+
+.title {
+  color: #333; /* Color del título */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.content {
+  max-width: 600px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+.contact-info {
+  background-color: #fff; /* Color de fondo del área de información */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.contact-info p {
+  margin: 10px 0; /* Espaciado entre párrafos */
+}
+
+.contact-info strong {
+  color: #333; /* Color del texto fuerte (negrita) */
+}
+
+</style>

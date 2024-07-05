@@ -2,11 +2,10 @@
   <div id="app">
     <NavbarTop />
     <HomeSection />
-    <AmenitiesSection/>
+    <AmenitiesSection />
     <GallerySection />
     <LocalGuideSection />
     <ContactSection />
-
   </div>
 </template>
 
@@ -17,7 +16,6 @@ import GallerySection from '@/components/Gallery2.vue';
 import LocalGuideSection from '@/components/LocalGuide.vue';
 import ContactSection from '@/components/Contact.vue';
 import AmenitiesSection from '@/components/Amenities.vue';
-
 
 export default {
   name: 'App',
@@ -33,40 +31,24 @@ export default {
 </script>
 
 <style>
-
-body, html {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Avenir', 'Helvetica', 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f5f5f5; /* Color de fondo general */
 }
+
 #app {
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 0px;
 }
 
-.navbar {
-  background-color: #00d1b2;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-item {
-  color: white;
-}
-
-.navbar-item:hover {
-  background-color: #00b89c;
-}
 
 .section {
-  padding-top: 100px;
+  padding-top: 100px; /* Espacio arriba para evitar que el navbar cubra el contenido */
 }
 
+/* Estilos para los bloques de formulario */
 .tally-block.tally-block-input-text,
 .tally-block.tally-block-input-email,
 .tally-block.tally-block-input-phone-number,
@@ -74,11 +56,12 @@ body, html {
 .tally-block.tally-block-input-number,
 .tally-block.tally-block-dropdown,
 .tally-block.tally-block-textarea {
-	width: 50%;
+  width: 50%; /* Ancho del formulario */
 }
+
 .tally-block.tally-block-title {
-    display: inline-block;
-    max-width: 26%;
-    width: auto;
+  display: inline-block;
+  max-width: 26%;
+  width: auto;
 }
 </style>

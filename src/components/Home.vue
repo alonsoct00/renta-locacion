@@ -191,4 +191,15 @@ export default {
 .choice_icon i {
   color: #007bff;
 }
+
+.intro_info {
+  margin-top: 60px;
+
+}
+
+.intro_info .container {
+    margin-bottom: 60px;
+  }
+
+
 </style>

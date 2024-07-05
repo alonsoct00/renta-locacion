@@ -73,6 +73,10 @@
     cursor: pointer;
   }
 
+  #gallery h1 {
+    margin-bottom: 60px;
+  }
+
   .custom-modal .modal-header {
     display: flex;
     justify-content: space-between;

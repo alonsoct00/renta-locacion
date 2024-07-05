@@ -50,4 +50,8 @@ export default {
 .card {
   margin-bottom: 20px;
 }
+
+#local-guide h1 {
+  margin-bottom: 60px;
+}
 </style>
