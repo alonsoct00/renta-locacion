@@ -98,7 +98,7 @@
     @media (width <= 800px) {
         .bookingIframe {
         background: transparent;
-        max-width: 9%;
+        max-width: 95%;
         }
     }
   </style>

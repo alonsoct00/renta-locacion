@@ -11,11 +11,16 @@
         </div>
       </div>
     </div>
+    <div class="map-container">
+      <MapView />
+    </div>
   </section>
 </template>
 
 <script>
+import MapView from "@/components/MapView.vue";
 export default {
+  components: {MapView},
   name: 'ContactSection'
 }
 </script>
@@ -32,9 +37,13 @@ export default {
   margin-bottom: 40px; /* Espaciado inferior */
 }
 
-.content {
-  max-width: 600px; /* Ancho máximo del contenido */
+.container {
+  max-width: 800px; /* Ancho máximo del contenido */
   margin: 0 auto; /* Centrar el contenido */
+}
+
+.content {
+  margin-bottom: 40px; /* Espaciado inferior */
 }
 
 .contact-info {
@@ -53,4 +62,19 @@ export default {
   color: #333; /* Color del texto fuerte (negrita) */
 }
 
+.map-container {
+  width: 100%;
+  height: 500px;
+  margin-top: 40px; /* Espaciado superior */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px; /* Espaciado interno en dispositivos móviles */
+  }
+
+  .map-container {
+    height: 300px; /* Altura del mapa en dispositivos móviles */
+  }
+}
 </style>

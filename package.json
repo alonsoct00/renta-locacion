@@ -17,7 +17,8 @@
     "vue": "^2.7.16",
     "vue-feather-icons": "^5.1.0",
     "vue-meta": "^2.4.0",
-    "vue-router": "^3.6.5"
+    "vue-router": "^3.6.5",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",
