@@ -4,7 +4,7 @@
       <h1 class="title">Información de Contacto</h1>
       <div class="content">
         <div class="contact-info">
-          <p><strong>Dirección:</strong> 123 Calle Falsa, Ciudad, País</p>
+          <p><strong>Dirección:</strong> Av. de las Granjas 538, Santo Tomas, Azcapotzalco, 02020 Ciudad de México, CDMX</p>
           <p><strong>Teléfono:</strong> +123 456 7890</p>
           <p><strong>Email:</strong> contacto@ejemplo.com</p>
           <p><strong>Red WiFi:</strong> Wifi-1234 (Contraseña: 5678)</p>

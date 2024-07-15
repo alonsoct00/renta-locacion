@@ -9,12 +9,19 @@
         Cargando...
       </div>
     </div>
+
     <div class="intro_info">
       <div class="container">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat magni alias fugit ut amet, exercitationem
-          quam nulla in corrupti earum sequi natus rem qui consectetur iste quidem? Modi, explicabo accusamus.</p>
+        <h2>Manuales</h2>
+        <p>El alojamiento está a diez minutos caminando del metro Ferrería. Justo al lado de la Vocacional 8. La dirección es Av. De las Granjas 538, int F207.  Para acceder al edificio, deberás tocar el timbre de la entrada e indicar a la persona en vigilancia que eres Huésped del F207. Ellos te darán acceso. Te pedirán una identificación para validar tu nombre (Sólo para mayores de edad). No se deberán quedar con ella. Previamente yo habré compartido detalles sobre los huéspedes, para facilitar el acceso.  </p>
+        <p>Puedes descargar los siguientes manuales para llevarlos contigo:</p>
+        <div class="guias-pdf">
+          <b-button variant="primary" @click="openPdfInNewTab('pdf2')">Ver manual (español)</b-button>
+          <b-button variant="primary" @click="openPdfInNewTab('pdf1')">Open manual (english)</b-button>
+
+        </div>
       </div>
+
       <div class="container">
         <h2>Ideal para...</h2>
         <div class="choice_list">
@@ -64,13 +71,18 @@ export default {
     BriefcaseIcon,
     MapIcon,
     KeyIcon,
-    HomeIcon
+    HomeIcon,
+
   },
   data() {
     return {
       basicInfo: null,
       isLoading: true,
       error: null,
+      pdfUrls: {
+        pdf1: '/docs/manual-goyo-en.pdf',
+        pdf2: '/docs/manual-goyo-es.pdf'
+      },
     };
   },
   metaInfo() {
@@ -109,6 +121,15 @@ export default {
     this.fetchBasicInfo();
   },
   methods: {
+
+  openPdfInNewTab(pdfKey) {
+      const url = this.pdfUrls[pdfKey];
+      if (url) {
+        window.open(url, '_blank');
+      } else {
+        console.error('PDF URL not found for key:', pdfKey);
+      }
+    },
     async fetchBasicInfo() {
       try {
         const response = await client.post('', {
@@ -198,8 +219,16 @@ export default {
 }
 
 .intro_info .container {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
+}
 
-
+.guias-pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
 </style>

@@ -7,49 +7,34 @@
         <h3>Servicio</h3>
         <div class="amenity-list">
           <div class="amenity-item">
-            <span><i class="bi bi-bath"></i>Baño</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-shower-50.png" alt="Baño"></i>Baño</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-bucket"></i>Productos de limpieza</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-towel-50.png" alt="Enseres baño"></i>Toallas, sábanas, jabón y papel higiénico</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-water"></i>Agua caliente</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-water-heater-50.png" alt="Agua caliente"></i>Agua caliente</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-house-door"></i>Habitación y lavandería</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-hair-dryer-50.png" alt="Secadora cabello"></i>Secadora de cabello</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-washer"></i>Lavadora</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-housekeeping-50.png" alt="Productos de limpieza"></i>Productos de limpieza</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-dryer"></i>Secadora: Gratis, en el alojamiento</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-washing-machine-50.png" alt="Lavadora"></i>Lavadora</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-clipboard-plus"></i>Elementos básicos</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-closet-50.png" alt="Closet"></i>Espacio para guardar ropa: Ropero</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-bath"></i>Toallas, sábanas, jabón y papel higiénico</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-hanger-50.png" alt="Ganchos"></i>Ganchos</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-hook"></i>Ganchos</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-theatre-curtain-50.png" alt="Cortinas"></i>Persianas o cortinas opacas</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-window"></i>Persianas o cortinas opacas</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-iron"></i>Plancha</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-hanger"></i>Espacio para guardar ropa: ropero</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="amenity">
-        <h3>Entretenimiento</h3>
-        <div class="amenity-list">
-          <div class="amenity-item">
-            <span><i class="bi bi-dumbbell"></i>Equipo para hacer ejercicio</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-iron-50.png" alt="Plancha"></i>Plancha</span>
           </div>
         </div>
       </div>
@@ -58,17 +43,13 @@
         <h3>Seguridad en el hogar</h3>
         <div class="amenity-list">
           <div class="amenity-item">
-            <span><i class="bi bi-camera"></i>Cámaras de seguridad exteriores en la propiedad</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-dome-camera-50.png" alt="Camaras de seguridad"></i>Cámaras de seguridad en interiores y exteriores en la propiedad</span>
           </div>
           <div class="amenity-item">
-            <span>El condominio cuenta con cámaras de seguridad en el exterior, en los estacionamientos y en los
-              pasillos de casa edificio.</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-fire-extinguisher-50.png" alt="Extintor"></i>Extintor de incendios</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-fire-extinguisher"></i>Extintor de incendios</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-first-aid"></i>Botiquín</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-first-aid-kit-50.png" alt="Cocina"></i>Botiquín</span>
           </div>
         </div>
       </div>
@@ -77,10 +58,10 @@
         <h3>Internet y oficina</h3>
         <div class="amenity-list">
           <div class="amenity-item">
-            <span><i class="bi bi-wifi"></i>Wifi</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-wi-fi-connected-50.png" alt="WiFi"></i>Wifi</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-laptop"></i>Área para trabajar</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-home-office-50.png" alt="Home Office"></i>Área para trabajar</span>
           </div>
         </div>
       </div>
@@ -89,46 +70,31 @@
         <h3>Cocina y comida</h3>
         <div class="amenity-list">
           <div class="amenity-item">
-            <span><i class="bi bi-egg-fried"></i>Cocina disponible para el uso de los huéspedes</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-kitchen-room-50.png" alt="Cocina"></i>Cocina disponible para el uso de los huéspedes</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-microwave"></i>Microondas</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-microwave-50.png" alt="Cocina"></i>Microondas</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-egg-fried"></i>Artículos básicos de cocina</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-kitchen-50.png" alt="Cocina"></i>Ollas y sartenes, aceite, sal y pimienta</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-pot"></i>Ollas y sartenes, aceite, sal y pimienta</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-restaurant-50.png" alt="Cocina"></i>Platos, platos hondos, cubiertos, palillos chinos, platos, tazas, etc.</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-egg-fried"></i>Platos y cubiertos</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-fridge-50.png" alt="Cocina"></i>Mini refrigerador</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-egg-fried"></i>Platos hondos, palillos chinos, platos, tazas, etc.</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-cooker-50.png" alt="Cocina"></i>Estufa y horno de gas Mabe</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-fridge"></i>Mini refrigerador</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-coffee-maker-50.png" alt="Cocina"></i>Cafetera: máquina de espresso, Nespresso, cafetera manual de filtro</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-egg-fried"></i>Estufa de gas Mabe</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-blender-50.png" alt="Cocina"></i>Licuadora</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-egg-fried"></i>Horno Mabe</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-coffee"></i>Cafetera: máquina de espresso, Nespresso, cafetera manual de filtro</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-wine"></i>Copas de vino</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-blender"></i>Licuadora</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-table"></i>Mesa de comedor</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-coffee"></i>Café</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-table-50.png" alt="Cocina"></i>Mesa de comedor</span>
           </div>
         </div>
       </div>
@@ -137,25 +103,10 @@
         <h3>Exteriores</h3>
         <div class="amenity-list">
           <div class="amenity-item">
-            <span><i class="bi bi-geo-alt"></i>Patio o balcón privado</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-balcony-50.png" alt="Balcón"></i>Patio o balcón privado</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-bbq"></i>Barbacoa</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="amenity">
-        <h3>Estacionamiento e instalaciones</h3>
-        <div class="amenity-list">
-          <div class="amenity-item">
-            <span><i class="bi bi-dumbbell"></i>Gimnasio compartido en en el edificio</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-house"></i>Alojamiento de un solo piso</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-walk"></i>Alojamiento sin escaleras</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-weber-50.png" alt="BBQ"></i>Barbacoa</span>
           </div>
         </div>
       </div>
@@ -164,16 +115,13 @@
         <h3>Servicios</h3>
         <div class="amenity-list">
           <div class="amenity-item">
-            <span><i class="bi bi-dog"></i>Se admiten mascotas</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-pets-50.png" alt="Mascotas"></i>Se admiten mascotas (Los animales de asistencia siempre están permitidos)</span>
           </div>
           <div class="amenity-item">
-            <span>Los animales de asistencia siempre están permitidos</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-host-50.png" alt="Llegada autónoma"></i>Llegada autónoma</span>
           </div>
           <div class="amenity-item">
-            <span><i class="bi bi-key"></i>Llegada autónoma</span>
-          </div>
-          <div class="amenity-item">
-            <span><i class="bi bi-door-open"></i>Cerradura inteligente</span>
+            <span><i class="icon-am"><img src="/img/icons/icons8-data-encryption-50.png" alt="Cerradura inteligente"></i>Cerradura inteligente</span>
           </div>
         </div>
       </div>
@@ -286,5 +234,17 @@ export default {
   /* Tamaño del texto */
   color: #666;
   /* Color del texto */
+}
+
+.amenity-item .icon-am {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+.amenity-item .icon-am img {
+    width: 100%;
+    height: auto;
 }
 </style>

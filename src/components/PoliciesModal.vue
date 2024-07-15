@@ -32,6 +32,10 @@ export default {
 </script>
 
 <style scoped>
+
+.content {
+  width: 90%;
+}
 .custom-modal .modal-title {
   font-size: 1.5rem;
   color: #343a40;

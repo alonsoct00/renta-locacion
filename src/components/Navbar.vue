@@ -1,16 +1,16 @@
 <template>
   <b-navbar toggleable="lg" type="dark" variant="info" fixed="top" class="navbar-custom">
-    <b-navbar-brand href="/" class="navbar-brand">Rental Location</b-navbar-brand>
+    <b-navbar-brand href="/" class="navbar-brand"></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#home" @click.prevent="scrollTo('home')" class="nav-item">Home</b-nav-item>
-        <b-nav-item href="#amenities" @click.prevent="scrollTo('amenities')" class="nav-item">Amenities</b-nav-item>
-        <b-nav-item href="#local-guide" @click.prevent="scrollTo('local-guide')" class="nav-item">Local Guide</b-nav-item>
-        <b-nav-item href="#gallery" @click.prevent="scrollTo('gallery')" class="nav-item">Gallery</b-nav-item>
-        <b-nav-item href="#contact" @click.prevent="scrollTo('contact')" class="nav-item">Contact</b-nav-item>
-        <b-nav-item @click="showPoliciesModal" class="nav-item">Policies</b-nav-item>
+        <b-nav-item href="#home" @click.prevent="scrollTo('home')" class="nav-item">Inicio</b-nav-item>
+        <b-nav-item href="#amenities" @click.prevent="scrollTo('amenities')" class="nav-item">Amenidades</b-nav-item>
+        <b-nav-item href="#local-guide" @click.prevent="scrollTo('local-guide')" class="nav-item">Guía local</b-nav-item>
+        <b-nav-item href="#gallery" @click.prevent="scrollTo('gallery')" class="nav-item">Galería</b-nav-item>
+        <b-nav-item href="#contact" @click.prevent="scrollTo('contact')" class="nav-item">Contacto</b-nav-item>
+        <b-nav-item @click="showPoliciesModal" class="nav-item">Políticas</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
     <PoliciesModal ref="policiesModal" />

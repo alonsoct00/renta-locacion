@@ -15,7 +15,7 @@
     name: 'MapView',
     data() {
       return {
-        center: { lat: 40.7128, lng: -74.0060 }, // Cambia esto a la latitud y longitud de tu apartamento
+        center: { lat: 19.485877578544986, lng: -99.17455294232921 }, // Cambia esto a la latitud y longitud de tu apartamento
       };
     },
   };
