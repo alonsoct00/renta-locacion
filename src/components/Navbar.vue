@@ -13,17 +13,20 @@
         <b-nav-item @click="showPoliciesModal" class="nav-item">Políticas</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
+    <LanguageSelector />
     <PoliciesModal ref="policiesModal" />
   </b-navbar>
 </template>
 
 <script>
 import PoliciesModal from '@/components/PoliciesModal.vue';
+import LanguageSelector from '@/components/LanguageSelector.vue';
 
 export default {
   name: 'NavbarTop',
   components: {
     PoliciesModal,
+    LanguageSelector,
   },
   methods: {
     scrollTo(section) {

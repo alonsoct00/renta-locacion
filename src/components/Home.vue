@@ -2,44 +2,46 @@
   <section class="hero is-fullheight-with-navbar" id="home">
     <div class="hero-body parallax" :style="{ backgroundImage: `url(${basicInfo ? basicInfo.heroImageUrl.url : ''})` }">
       <div class="container" v-if="basicInfo">
-        <h1 class="title">{{ basicInfo.title }}</h1>
-        <p class="subtitle">{{ basicInfo.description }}</p>
+        <h1 class="title">{{ $t('home.title') }}</h1>
+        <p class="subtitle">{{ $t('home.subtitle') }}</p>
+        <!--<h1 class="title">{{ basicInfo.title }}</h1>
+        <p class="subtitle">{{ basicInfo.description }}</p>-->
       </div>
       <div v-else>
-        Cargando...
+        {{ $t('home.loading') }}
       </div>
     </div>
 
     <div class="intro_info">
       <div class="container">
-        <h2>Manuales</h2>
-        <p>El alojamiento está a diez minutos caminando del metro Ferrería. Justo al lado de la Vocacional 8. La dirección es Av. De las Granjas 538, int F207.  Para acceder al edificio, deberás tocar el timbre de la entrada e indicar a la persona en vigilancia que eres Huésped del F207. Ellos te darán acceso. Te pedirán una identificación para validar tu nombre (Sólo para mayores de edad). No se deberán quedar con ella. Previamente yo habré compartido detalles sobre los huéspedes, para facilitar el acceso.  </p>
-        <p>Puedes descargar los siguientes manuales para llevarlos contigo:</p>
+        <h2>{{ $t('home.manuals') }}</h2>
+        <p>{{ $t('home.manualInfo') }}</p>
+        <p>{{ $t('home.downloadManuals') }}</p>
         <div class="guias-pdf">
-          <b-button variant="primary" @click="openPdfInNewTab('pdf2')">Ver manual (español)</b-button>
-          <b-button variant="primary" @click="openPdfInNewTab('pdf1')">Open manual (english)</b-button>
+          <b-button variant="primary" @click="openPdfInNewTab('pdf2')">{{ $t('home.viewManualEs') }}</b-button>
+          <b-button variant="primary" @click="openPdfInNewTab('pdf1')">{{ $t('home.viewManualEn') }}</b-button>
 
         </div>
       </div>
 
       <div class="container">
-        <h2>Ideal para...</h2>
+        <h2>{{ $t('home.idealFor') }}</h2>
         <div class="choice_list">
           <div class="choice_item">
             <MapIcon class="choice_icon" />
-            <p>Vacaciones</p>
+            <p>{{ $t('home.vacation') }}</p>
           </div>
           <div class="choice_item">
             <BriefcaseIcon class="choice_icon" />
-            <p>Viaje de negocios</p>
+            <p>{{ $t('home.businessTrip') }}</p>
           </div>
           <div class="choice_item">
             <KeyIcon class="choice_icon" />
-            <p>Alojamiento temporal</p>
+            <p>{{ $t('home.temporaryStay') }}</p>
           </div>
           <div class="choice_item">
             <HomeIcon class="choice_icon" />
-            <p>Renta de largo plazo</p>
+            <p>{{ $t('home.longTermRent') }}</p>
           </div>
         </div>
       </div>
@@ -87,20 +89,19 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.basicInfo ? this.basicInfo.title : 'Home - Rental Location',
+      title: this.basicInfo ? this.basicInfo.title : this.$t('home.title'),
       meta: [
         {
           name: 'description',
-          content: this.basicInfo ? this.basicInfo.description : 'Welcome to our rental location, the perfect place to stay for your vacation.',
+          content: this.basicInfo ? this.basicInfo.description : this.$t('home.manualInfo'),
         },
-        // Open Graph tags
         {
           property: 'og:title',
-          content: this.basicInfo ? this.basicInfo.title : 'Home - Rental Location'
+          content: this.basicInfo ? this.basicInfo.title : this.$t('home.title')
         },
         {
           property: 'og:description',
-          content: this.basicInfo ? this.basicInfo.description : 'Welcome to our rental location, the perfect place to stay for your vacation.'
+          content: this.basicInfo ? this.basicInfo.description : this.$t('home.manualInfo')
         },
         {
           property: 'og:type',

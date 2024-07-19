@@ -44,6 +44,9 @@ importers:
       vue-feather-icons:
         specifier: ^5.1.0
         version: 5.1.0
+      vue-i18n:
+        specifier: '8'
+        version: 8.28.2(vue@2.7.16)
       vue-meta:
         specifier: ^2.4.0
         version: 2.4.0
@@ -3747,6 +3750,11 @@ packages:
 
   vue-hot-reload-api@2.3.4:
     resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==}
+
+  vue-i18n@8.28.2:
+    resolution: {integrity: sha512-C5GZjs1tYlAqjwymaaCPDjCyGo10ajUphiwA922jKt9n7KPpqR7oM1PCwYzhB/E7+nT3wfdG3oRre5raIT1rKA==}
+    peerDependencies:
+      vue: ^2
 
   vue-loader@15.11.1:
     resolution: {integrity: sha512-0iw4VchYLePqJfJu9s62ACWUXeSqM30SQqlIftbYWM3C+jpPcEHKSPUZBLjSF9au4HTHQ/naF6OGnO3Q/qGR3Q==}
@@ -8015,6 +8023,10 @@ snapshots:
   vue-functional-data-merge@3.1.0: {}
 
   vue-hot-reload-api@2.3.4: {}
+
+  vue-i18n@8.28.2(vue@2.7.16):
+    dependencies:
+      vue: 2.7.16
 
   vue-loader@15.11.1(@vue/compiler-sfc@3.4.27)(css-loader@6.11.0(webpack@5.91.0))(lodash@4.17.21)(webpack@5.91.0):
     dependencies:
