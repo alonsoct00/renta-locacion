@@ -1,13 +1,13 @@
 <template>
   <section class="section" id="contact">
     <div class="container">
-      <h1 class="title">Información de Contacto</h1>
+      <h1 class="title">{{ $t('contact.title') }}</h1>
       <div class="content">
         <div class="contact-info">
-          <p><strong>Dirección:</strong> Av. de las Granjas 538, Santo Tomas, Azcapotzalco, 02020 Ciudad de México, CDMX</p>
-          <p><strong>Teléfono:</strong> +123 456 7890</p>
-          <p><strong>Email:</strong> contacto@ejemplo.com</p>
-          <p><strong>Red WiFi:</strong> Wifi-1234 (Contraseña: 5678)</p>
+          <p><strong>{{ $t('contact.address') }}</strong> Av. de las Granjas 538, Santo Tomas, Azcapotzalco, 02020 Ciudad de México, CDMX</p>
+          <p><strong>{{ $t('contact.phone') }}</strong> +123 456 7890</p>
+          <p><strong>{{ $t('contact.email') }}</strong> contacto@ejemplo.com</p>
+          <p><strong>{{ $t('contact.wifi') }}</strong> Wifi-1234 ({{ $t('contact.wifiPassword') }}: 5678)</p>
         </div>
       </div>
     </div>

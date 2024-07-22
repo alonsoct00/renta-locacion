@@ -5,12 +5,12 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#home" @click.prevent="scrollTo('home')" class="nav-item">Inicio</b-nav-item>
-        <b-nav-item href="#amenities" @click.prevent="scrollTo('amenities')" class="nav-item">Amenidades</b-nav-item>
-        <b-nav-item href="#local-guide" @click.prevent="scrollTo('local-guide')" class="nav-item">Guía local</b-nav-item>
-        <b-nav-item href="#gallery" @click.prevent="scrollTo('gallery')" class="nav-item">Galería</b-nav-item>
-        <b-nav-item href="#contact" @click.prevent="scrollTo('contact')" class="nav-item">Contacto</b-nav-item>
-        <b-nav-item @click="showPoliciesModal" class="nav-item">Políticas</b-nav-item>
+        <b-nav-item href="#home" @click.prevent="scrollTo('home')" class="nav-item">{{ $t('navbar.home') }}</b-nav-item>
+        <b-nav-item href="#amenities" @click.prevent="scrollTo('amenities')" class="nav-item">{{ $t('navbar.amenities') }}</b-nav-item>
+        <b-nav-item href="#local-guide" @click.prevent="scrollTo('local-guide')" class="nav-item">{{ $t('navbar.localGuide') }}</b-nav-item>
+        <b-nav-item href="#gallery" @click.prevent="scrollTo('gallery')" class="nav-item">{{ $t('navbar.gallery') }}</b-nav-item>
+        <b-nav-item href="#contact" @click.prevent="scrollTo('contact')" class="nav-item">{{ $t('navbar.contact') }}</b-nav-item>
+        <!----<b-nav-item @click="showPoliciesModal" class="nav-item">{{ $t('navbar.policies') }}</b-nav-item>-->
       </b-navbar-nav>
     </b-collapse>
     <LanguageSelector />

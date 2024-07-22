@@ -3,7 +3,7 @@
     <div class="hero-body parallax" :style="{ backgroundImage: `url(${basicInfo ? basicInfo.heroImageUrl.url : ''})` }">
       <div class="container" v-if="basicInfo">
         <h1 class="title">{{ $t('home.title') }}</h1>
-        <p class="subtitle">{{ $t('home.subtitle') }}</p>
+        <h3 class="subtitle">{{ $t('home.subtitle') }}</h3>
         <!--<h1 class="title">{{ basicInfo.title }}</h1>
         <p class="subtitle">{{ basicInfo.description }}</p>-->
       </div>
@@ -18,10 +18,21 @@
         <p>{{ $t('home.manualInfo') }}</p>
         <p>{{ $t('home.downloadManuals') }}</p>
         <div class="guias-pdf">
-          <b-button variant="primary" @click="openPdfInNewTab('pdf2')">{{ $t('home.viewManualEs') }}</b-button>
-          <b-button variant="primary" @click="openPdfInNewTab('pdf1')">{{ $t('home.viewManualEn') }}</b-button>
-
-        </div>
+        <b-button
+          v-if="$i18n.locale === 'es'"
+          variant="primary"
+          @click="openPdfInNewTab('pdf2')"
+        >
+          {{ $t('home.viewManualEs') }}
+        </b-button>
+        <b-button
+          v-if="$i18n.locale === 'en'"
+          variant="primary"
+          @click="openPdfInNewTab('pdf1')"
+        >
+          {{ $t('home.viewManualEn') }}
+        </b-button>
+      </div>
       </div>
 
       <div class="container">
@@ -113,7 +124,7 @@ export default {
         },
         {
           property: 'og:image',
-          content: 'https://example.com/path/to/image.jpg' // Cambia a la URL de tu imagen
+          content: '' // Cambia a la URL de tu imagen
         }
       ]
     };
@@ -171,7 +182,7 @@ export default {
   text-align: center;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .parallax {
@@ -189,6 +200,17 @@ export default {
 .title,
 .subtitle {
   margin: 0;
+
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-shadow: -1px 2px 1px #ffffff73;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-shadow: -1px 2px 1px #ffffff73;
 }
 
 .choice_list {
