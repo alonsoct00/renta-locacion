@@ -8,8 +8,8 @@
         <b-nav-item href="#home" @click.prevent="scrollTo('home')" class="nav-item">{{ $t('navbar.home') }}</b-nav-item>
         <b-nav-item href="#amenities" @click.prevent="scrollTo('amenities')" class="nav-item">{{ $t('navbar.amenities')
           }}</b-nav-item>
-        <b-nav-item href="#local-guide" @click.prevent="scrollTo('local-guide')" class="nav-item">{{
-          $t('navbar.localGuide') }}</b-nav-item>
+        <!--<b-nav-item href="#local-guide" @click.prevent="scrollTo('local-guide')" class="nav-item">{{
+            $t('navbar.localGuide') }}</b-nav-item>-->
         <b-nav-item href="#gallery" @click.prevent="scrollTo('gallery')" class="nav-item">{{ $t('navbar.gallery')
           }}</b-nav-item>
         <b-nav-item href="#contact" @click.prevent="scrollTo('contact')" class="nav-item">{{ $t('navbar.contact')
