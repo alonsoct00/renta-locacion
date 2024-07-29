@@ -246,4 +246,11 @@ h3 {
   width: 100%;
   margin: 0 auto;
 }
+
+@media (width < 768px) {
+  .hero-body {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
 </style>

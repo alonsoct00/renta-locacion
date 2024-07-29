@@ -80,4 +80,24 @@ export default {
 .nav-link {
   color: #ffffff;
 }
+
+@media (width < 768px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-nav {
+    text-align: left;
+  }
+
+  .nav-link {
+    padding: 8px 16px;
+  }
+
+  .language-selector {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
 </style>
