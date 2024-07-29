@@ -36,10 +36,6 @@
         <div class="amenity-list">
           <div class="amenity-item">
             <i class="bi bi-x text-danger"></i>
-            <span>{{ $t('amenities.notIncludedList.noTV') }}</span>
-          </div>
-          <div class="amenity-item">
-            <i class="bi bi-x text-danger"></i>
             <span>{{ $t('amenities.notIncludedList.noAC') }}</span>
           </div>
           <div class="amenity-item">
@@ -111,7 +107,6 @@ export default {
           title: 'amenities.outdoors',
           items: [
             { icon: '/img/icons/icons8-balcony-50.png', alt: 'amenities.outdoorsList.balcony', text: 'amenities.outdoorsList.balcony' },
-            { icon: '/img/icons/icons8-weber-50.png', alt: 'amenities.outdoorsList.bbq', text: 'amenities.outdoorsList.bbq' }
           ]
         },
         additionalServices: {

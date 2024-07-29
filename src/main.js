@@ -19,6 +19,9 @@ Vue.use(VueGoogleMaps, {
   },
 });
 
+console.log('Google Maps API Key:', process.env.VUE_APP_GOOGLE_MAPS_API_KEY);
+
+
 Vue.config.productionTip = false;
 
 new Vue({

@@ -18,21 +18,13 @@
         <p>{{ $t('home.manualInfo') }}</p>
         <p>{{ $t('home.downloadManuals') }}</p>
         <div class="guias-pdf">
-        <b-button
-          v-if="$i18n.locale === 'es'"
-          variant="primary"
-          @click="openPdfInNewTab('pdf2')"
-        >
-          {{ $t('home.viewManualEs') }}
-        </b-button>
-        <b-button
-          v-if="$i18n.locale === 'en'"
-          variant="primary"
-          @click="openPdfInNewTab('pdf1')"
-        >
-          {{ $t('home.viewManualEn') }}
-        </b-button>
-      </div>
+          <b-button v-if="$i18n.locale === 'es'" variant="primary" @click="openPdfInNewTab('pdf2')">
+            {{ $t('home.viewManualEs') }}
+          </b-button>
+          <b-button v-if="$i18n.locale === 'en'" variant="primary" @click="openPdfInNewTab('pdf1')">
+            {{ $t('home.viewManualEn') }}
+          </b-button>
+        </div>
       </div>
 
       <div class="container">
@@ -59,12 +51,12 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-xs-12">
+        <!--<div class="col-md-6 col-xs-12">
           <BookingIframe />
-        </div>
-        <div class="col-md-6 col-xs-12">
+        </div>-->
+        <!---<div class="col-md-12 col-xs-12">
           <AirbnbEmbed />
-        </div>
+        </div>-->
       </div>
     </div>
   </section>
@@ -72,15 +64,15 @@
 
 <script>
 import client from '@/services/datocms';
-import BookingIframe from '@/components/BookingIframe.vue';
+//import BookingIframe from '@/components/BookingIframe.vue';
 import { BriefcaseIcon, MapIcon, KeyIcon, HomeIcon } from 'vue-feather-icons';
-import AirbnbEmbed from '@/components/AirbnbEmbed.vue';
+//import AirbnbEmbed from '@/components/AirbnbEmbed.vue';
 
 export default {
   name: 'HomeSection',
   components: {
-    BookingIframe,
-    AirbnbEmbed,
+    //BookingIframe,
+    //AirbnbEmbed,
     BriefcaseIcon,
     MapIcon,
     KeyIcon,
@@ -134,7 +126,7 @@ export default {
   },
   methods: {
 
-  openPdfInNewTab(pdfKey) {
+    openPdfInNewTab(pdfKey) {
       const url = this.pdfUrls[pdfKey];
       if (url) {
         window.open(url, '_blank');
@@ -246,12 +238,12 @@ h3 {
 }
 
 .guias-pdf {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
 }
 </style>
